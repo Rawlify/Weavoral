@@ -1,0 +1,138 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 1.5rem 0;
+  transition: var(--transition);
+  background-color: transparent;
+}
+
+.navbar.scrolled {
+  background-color: rgba(250, 246, 240, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 1rem 0;
+  box-shadow: var(--shadow-sm);
+  border-bottom: 1px solid rgba(139, 94, 60, 0.1);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.nav-logo-box {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.logo-image-wrapper {
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  mix-blend-mode: multiply;
+}
+
+.logo-image-wrapper img {
+  height: 120px;
+  margin-top: -24px;
+  max-width: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.nav-links a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  position: relative;
+}
+
+.nav-links a:after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: var(--transition);
+}
+
+.nav-links a:hover:after,
+.nav-links a.active:after {
+  width: 100%;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--primary-color);
+}
+
+.nav-cta {
+  background-color: var(--primary-color);
+  color: var(--white) !important;
+  padding: 0.6rem 1.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.nav-cta:after {
+  display: none;
+}
+
+.nav-cta:hover {
+  background-color: var(--primary-light);
+  transform: translateY(-2px);
+}
+
+.nav-toggle {
+  display: none;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+@media (max-width: 992px) {
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 70%;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    transition: 0.4s ease-in-out;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.05);
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-toggle {
+    display: block;
+    z-index: 1001;
+  }
+}

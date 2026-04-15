@@ -1,0 +1,63 @@
+.page-header {
+  background-color: var(--secondary-color);
+  padding: 8rem 0 4rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(139, 94, 60, 0.1);
+}
+
+.page-header h1 {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.page-header p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+.section-padding {
+  padding-bottom: 5rem;
+}
+
+.category-filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.filter-btn {
+  background: transparent;
+  border: 1px solid rgba(139, 94, 60, 0.2);
+  color: var(--text-color);
+  padding: 0.6rem 1.5rem;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.filter-btn:hover {
+  background-color: rgba(139, 94, 60, 0.05);
+  border-color: var(--primary-color);
+}
+
+.filter-btn.active {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-color: var(--primary-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.mt-4 { margin-top: 2rem; }
+.mt-5 { margin-top: 3rem; }
+
+@media (max-width: 768px) {
+  .page-header {
+    padding: 6rem 0 3rem;
+  }
+  .page-header h1 {
+    font-size: 2.2rem;
+  }
+}

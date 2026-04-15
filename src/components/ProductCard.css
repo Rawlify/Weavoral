@@ -1,0 +1,124 @@
+.product-card {
+  background-color: var(--white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  border: 1px solid rgba(139, 94, 60, 0.05);
+}
+
+.product-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-5px);
+}
+
+.product-image-container {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.08);
+}
+
+.product-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(62, 44, 35, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.product-card:hover .product-overlay {
+  opacity: 1;
+}
+
+.product-overlay span {
+  color: var(--white);
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid var(--white);
+  border-radius: var(--radius-sm);
+  transform: translateY(20px);
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-overlay span {
+  transform: translateY(0);
+}
+
+.product-info {
+  padding: 1.5rem;
+}
+
+.product-category {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+  display: block;
+  font-weight: 600;
+}
+
+.product-name-link {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.product-name {
+  font-size: 1.15rem;
+  color: var(--text-color);
+  font-weight: 600;
+  font-family: var(--font-body);
+}
+
+.product-name-link:hover .product-name {
+  color: var(--primary-color);
+}
+
+.product-price {
+  font-weight: 500;
+  color: var(--text-muted);
+  margin-bottom: 1.2rem;
+}
+
+.product-actions {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+}
+
+.icon-btn {
+  flex: 0 0 auto;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

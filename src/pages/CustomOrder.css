@@ -1,0 +1,126 @@
+.custom-order-container {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 4rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.form-wrapper {
+  background-color: var(--white);
+  padding: 3rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(139, 94, 60, 0.05);
+}
+
+.form-wrapper h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-subtitle {
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.custom-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.custom-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.custom-form input,
+.custom-form select,
+.custom-form textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid rgba(139, 94, 60, 0.2);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  transition: var(--transition);
+}
+
+.custom-form input:focus,
+.custom-form select:focus,
+.custom-form textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(139, 94, 60, 0.1);
+}
+
+.info-card {
+  background-color: var(--secondary-color);
+  padding: 2.5rem;
+  border-radius: var(--radius-lg);
+  position: sticky;
+  top: 100px;
+}
+
+.info-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.steps-list {
+  list-style: none;
+}
+
+.steps-list li {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.step-num {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.steps-list strong {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: var(--text-color);
+}
+
+.steps-list p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 992px) {
+  .custom-order-container {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-order-container {
+    grid-template-columns: 1fr;
+  }
+  .form-wrapper {
+    padding: 2rem 1.5rem;
+  }
+  .info-card {
+    position: static;
+  }
+}
