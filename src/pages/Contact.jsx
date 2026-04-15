@@ -76,7 +76,7 @@ const Contact = () => {
 
           <div className="contact-image-wrapper">
              {/* We can use the mats image here as a placeholder for a workshop/store image */}
-             <img src="/assets/woven-mats.png" alt="Weavoral Products" className="contact-image rounded-image" />
+             <img src={`${import.meta.env.BASE_URL}assets/woven-mats.png`} alt="Weavoral Products" className="contact-image rounded-image" />
              <div className="image-caption">Handmade with precision, delivered with care.</div>
           </div>
         </div>

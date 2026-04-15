@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="container nav-container">
         <Link to="/" className="nav-logo nav-logo-box">
           <div className="logo-image-wrapper">
-            <img src="/assets/logo.png" alt="Weavoral Icon" />
+            <img src={`${import.meta.env.BASE_URL}assets/logo.png`} alt="Weavoral Icon" />
           </div>
           <span>WEAVORAL</span>
         </Link>

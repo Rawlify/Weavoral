@@ -8,12 +8,12 @@ const Products = () => {
 
   // Placeholder data - in a real app this would come from an API/CMS
   const allProducts = [
-    { id: 1, name: "Handwoven Patterned Door Mat", price: "600 LKR + Delivery", image: "/assets/door-mat-1.jpg", category: "Door Mats" },
-    { id: 2, name: "Classic Round Door Mat", price: "600 LKR + Delivery", image: "/assets/door-mat-2.jpg", category: "Door Mats" },
-    { id: 3, name: "Checkered Cotton Bedding Set", price: "3,000 LKR", image: "/assets/bedding-1.jpg", category: "Bedsheets" },
-    { id: 4, name: "Pastel Block Print Bedding Set", price: "3,000 LKR", image: "/assets/bedding-2.jpg", category: "Bedsheets" },
-    { id: 5, name: "Premium Cotton Bedding Set", price: "3,000 LKR", image: "/assets/hero-bedding.png", category: "Bedsheets" },
-    { id: 6, name: "Traditional Ekel Mat", price: "4,500 LKR", image: "/assets/eco-mats.png", category: "Eco Mats" },
+    { id: 1, name: "Handwoven Patterned Door Mat", price: "600 LKR + Delivery", image: `${import.meta.env.BASE_URL}assets/door-mat-1.jpg`, category: "Door Mats" },
+    { id: 2, name: "Classic Round Door Mat", price: "600 LKR + Delivery", image: `${import.meta.env.BASE_URL}assets/door-mat-2.jpg`, category: "Door Mats" },
+    { id: 3, name: "Checkered Cotton Bedding Set", price: "3,000 LKR", image: `${import.meta.env.BASE_URL}assets/bedding-1.jpg`, category: "Bedsheets" },
+    { id: 4, name: "Pastel Block Print Bedding Set", price: "3,000 LKR", image: `${import.meta.env.BASE_URL}assets/bedding-2.jpg`, category: "Bedsheets" },
+    { id: 5, name: "Premium Cotton Bedding Set", price: "3,000 LKR", image: `${import.meta.env.BASE_URL}assets/hero-bedding.png`, category: "Bedsheets" },
+    { id: 6, name: "Traditional Ekel Mat", price: "4,500 LKR", image: `${import.meta.env.BASE_URL}assets/eco-mats.png`, category: "Eco Mats" },
   ];
 
   const categories = ['All', 'Mats', 'Bedsheets', 'Pillow Covers', 'Door Mats', 'Eco Mats'];

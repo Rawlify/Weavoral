@@ -11,28 +11,28 @@ const Home = () => {
       id: 1,
       name: "Handwoven Patterned Door Mat",
       price: "600 LKR + Delivery",
-      image: "/assets/door-mat-1.jpg",
+      image: `${import.meta.env.BASE_URL}assets/door-mat-1.jpg`,
       category: "Door Mats"
     },
     {
       id: 2,
       name: "Classic Round Door Mat",
       price: "600 LKR + Delivery",
-      image: "/assets/door-mat-2.jpg",
+      image: `${import.meta.env.BASE_URL}assets/door-mat-2.jpg`,
       category: "Door Mats"
     },
     {
       id: 3,
       name: "Checkered Cotton Bedding Set",
       price: "3,000 LKR",
-      image: "/assets/bedding-1.jpg",
+      image: `${import.meta.env.BASE_URL}assets/bedding-1.jpg`,
       category: "Bedsheets"
     },
     {
       id: 4,
       name: "Pastel Block Print Bedding Set",
       price: "3,000 LKR",
-      image: "/assets/bedding-2.jpg",
+      image: `${import.meta.env.BASE_URL}assets/bedding-2.jpg`,
       category: "Bedsheets"
     }
   ];
@@ -42,7 +42,7 @@ const Home = () => {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-background">
-          <img src="/assets/hero-bedding.png" alt="Premium Bedding Set" />
+          <img src={`${import.meta.env.BASE_URL}assets/hero-bedding.png`} alt="Premium Bedding Set" />
           <div className="hero-overlay"></div>
         </div>
         <div className="container position-relative z-10">
@@ -77,7 +77,7 @@ const Home = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <img src="/assets/woven-mats.png" alt="Handcrafted Mats" className="rounded-image" />
+              <img src={`${import.meta.env.BASE_URL}assets/woven-mats.png`} alt="Handcrafted Mats" className="rounded-image" />
             </motion.div>
             <motion.div 
               className="about-text"
